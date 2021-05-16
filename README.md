@@ -1,1 +1,3 @@
-Welcome to my CodePen website
+# product-landing-page
+
+Welcome to my responsive product landing page.
