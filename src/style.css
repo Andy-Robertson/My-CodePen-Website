@@ -1,0 +1,466 @@
+/* Google font import */
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900");
+
+/* Base styling */
+
+html {
+  /* styling will only apply properly using the html tag directly, .html-container only applies occasionally, codepen bug?  */
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  color: #565656;
+  background-color: #ffffff;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+
+.body-container {
+  margin: 0 auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3.2rem;
+}
+
+.section-container {
+  display: flex;
+  height: 54rem;
+  padding-top: 5rem;
+  box-shadow: inset 0rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #76323f;
+  width: 100%;
+  height: 2rem;
+  padding-top: 1rem;
+}
+
+/* Navigation menu styling */
+
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-largeDevice {
+  display: flex;
+}
+
+.nav-largeDevice>li {
+  list-style-type: none;
+  margin: 0;
+  font-size: 1rem;
+  padding: 0 1rem 0;
+}
+
+.nav-largeDevice>li>a {
+  color: #76323f;
+  font-weight: 900;
+  text-decoration: none;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+}
+
+.nav-largeDevice>li>a:hover {
+  color: #c09f80;
+}
+
+.nav-hamburger {
+  display: none;
+  background-color: transparent;
+  border: 0;
+  color: #c09f80;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.nav-hamburger:focus {
+  outline: none;
+}
+
+/* Header styling */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0rem 0.25rem 0.125rem -0.125rem #c09f80;
+}
+
+.company-logo {
+  margin-left: 1rem;
+  height: 2rem;
+  padding: 0.1rem 0 0.1rem;
+}
+
+/* Base section heading styling */
+
+.news-heading {
+  height: 8rem;
+  padding-bottom: 12rem;
+  font-size: 5.5rem;
+}
+
+.heading {
+  font-size: 5rem;
+  color: #76323f;
+}
+
+/* News section styling */
+
+.news-section {
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/07/HD-1080p-Desktop-Backgrounds-Download.jpg");
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+.email-input>input[type="email"] {
+  display: flex;
+  flex-direction: column;
+  width: 9.7rem;
+  padding: 0.625rem 3.125rem;
+  border: 0 groove #c09f80;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  color: #565656;
+  font-family: Lato, sans-serif;
+}
+
+.email-input>input[type="email"]:focus {
+  border: 0.1rem solid #76323f;
+  border-radius: 0.5rem;
+  cursor: auto;
+  color: #76323f;
+  font-family: Lato, sans-serif;
+}
+
+.subscribe-button {
+  height: 3.1rem;
+  width: 15.9375rem;
+  margin-bottom: 5rem;
+  background-color: #ffffff;
+  border: 0 groove #c09f80;
+  border-radius: 0.3rem;
+  font-weight: 900;
+  font-family: Lato, sans-serif;
+  color: #76323f;
+}
+
+.subscribe-button:hover {
+  cursor: pointer;
+  color: white;
+  border-color: #00a2ed;
+  border-radius: 0.8rem;
+  background-color: #00a2ed;
+  letter-spacing: 1px;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2),
+    0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Product section styling */
+
+.product-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.product-container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 1rem 0 5rem;
+  font-size: 1.6rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.key-feature-list>li {
+  padding: 0.3rem 0 0.3rem;
+}
+
+/* Media section styling */
+
+.media-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d7cec7;
+}
+
+.media-container {
+  display: flex;
+  width: 98%;
+  justify-content: center;
+}
+
+.product-video {
+  max-width: 50vw;
+  max-height: 30vw;
+  border-style: solid;
+  border-width: 0.125rem;
+  border-color: #c09f80;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2),
+    0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
+}
+
+.product-video:hover {
+  max-width: 51vw;
+  max-height: 31vw;
+  transition: 0.8s ease;
+  -webkit-transition: 0.8s ease;
+  -moz-transition: 0.8s ease;
+  -ms-transition: 0.8s ease;
+}
+
+/* Testimonial section styling */
+
+.testimonials-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.testimonials-container {
+  font-size: 1.25rem;
+  font-style: italic;
+  width: 70%;
+  text-align: justify;
+  text-justify: inter-word;
+  background: #d7cec7;
+  border-left: 0.625rem solid #76323f;
+  margin: 1.5em 0.625rem;
+  padding: 0.5em 0.625rem;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2),
+    0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Download section styling */
+
+.downloads-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d7cec7;
+}
+
+.downloads-container-1 {
+  margin-top: 5rem;
+}
+
+.downloads-container-3 {
+  margin-bottom: 5rem;
+}
+
+.download-buttons {
+  height: 3.75rem;
+  width: 15.9375rem;
+  background-color: #ffffff;
+  border: 0 groove #c09f80;
+  border-radius: 0.3rem;
+  font-weight: 900;
+  font-family: Lato, sans-serif;
+  color: #76323f;
+  margin-bottom: 1rem;
+}
+
+.download-buttons:hover {
+  cursor: pointer;
+  border-radius: 0.8rem;
+  letter-spacing: 1px;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2),
+    0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
+}
+
+.download-windows:hover {
+  color: #ffffff;
+  border-color: #00a2ed;
+  background-color: #00a2ed;
+}
+
+.download-mac:hover {
+  color: #ffffff;
+  border-color: #c0c0c0;
+  background-color: #c0c0c0;
+}
+
+.download-linux:hover {
+  color: #ffffff;
+  border-color: #dd4814;
+  background-color: #dd4814;
+}
+
+/* Media Quieres 1000/600/400 */
+
+@media (max-width: 1000px) {
+  .main-container {
+    padding-top: 2.2rem;
+  }
+
+  .nav-largeDevice {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-largeDevice.show {
+    display: flex;
+    justify-items: center;
+  }
+
+  .nav-largeDevice>li>a {
+    padding: 0.1rem 0 0.1rem;
+  }
+
+  .nav-hamburger {
+    display: block;
+  }
+
+  .nav-largeDevice>li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .news-heading,
+  .heading {
+    font-size: 3.2rem;
+  }
+
+  .product-container-text {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+
+  .key-feature-list {
+    margin: 0.6rem;
+    padding: 0;
+  }
+
+  .product-video {
+    min-width: 70vw;
+    min-height: 44vw;
+  }
+
+  .product-video:hover {
+    max-width: 71vw;
+    max-height: 45vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-container {
+    /* height: 100%; */
+  }
+
+  .news-heading {
+    padding-bottom: 1.5rem;
+  }
+
+  .news-heading,
+  .heading {
+    font-size: 1.9rem;
+  }
+
+  .product-container-text {
+    width: 90%;
+    font-size: 1.3rem;
+  }
+
+  .product-video {
+    min-width: 90vw;
+    min-height: 53vw;
+  }
+
+  .product-video:hover {
+    max-width: 91vw;
+    max-height: 54vw;
+  }
+
+  .media-container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .testimonials-container {
+    width: 80%;
+    font-size: 1.25rem;
+    font-style: italic;
+  }
+}
+
+@media (max-width: 400px) {
+  .section-container {
+    padding-top: 0rem;
+    height: 44rem;
+  }
+
+  .news-section {
+    padding-top: 10rem;
+    height: 34rem;
+  }
+
+  .news-heading,
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .heading {
+    padding: 0rem;
+
+  }
+
+  .product-container-text {
+    font-size: 1.1rem;
+  }
+
+  .key-feature-list>li>a {
+    margin: 0;
+  }
+
+  .product-video {
+    min-width: 93vw;
+    min-height: 54vw;
+  }
+
+  .product-video:hover {
+    max-width: 94vw;
+    max-height: 55vw;
+  }
+
+  .testimonials-container {
+    width: 89%;
+    font-size: 1.25rem;
+    font-style: italic;
+    margin: 0.25em 0.625rem;
+    padding: 0.5em 0.625rem;
+  }
+}

@@ -1,27 +1,28 @@
+<!-- Note the w3 validator highlights that role="x" is unnecessary, however I have included them to help with assistive technology per the video tutorial --> 
+
 <!-- !DOCTYPE html and html tags included to pass w3 validator but not required on codepen I believe  -->
 <!DOCTYPE html>
-<html lang="en" class="html-container">
+<html lang="en">
 
 <head>
-  <!-- CSS import -->
-  <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+  <!-- freeCodeCamp test script -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <!-- Font Awesome Import (used for hamburger menu) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title role="heading">Product Landing Page (Improved)</title>
+  <title>Product Landing Page (Improved)</title>
 </head>
 
 <body class="body-container">
   <!-- Header & navbar -->
   <header id="header" class="header-container" role="banner">
     <nav id="nav-bar" class="nav-bar" role="navigation">
-      <img id="header-img" class="company-logo" src="img/opensoft.png" alt="OpenSoft company logo"
-        aria-label="OpenSoft company logo, brown tux icon with OpenSoft text on right">
+      <img id="header-img" class="company-logo" src="https://andy-robertson.github.io/product-landing-page/img/opensoft.png" alt="OpenSoft company logo" aria-label="OpenSoft company logo, brown tux icon with OpenSoft text on right">
       <button id="nav-hamburger" class="nav-hamburger" role="button">
         <i class="fa fa-bars"></i>
       </button>
-      <ul id="nav-fullSizeBar" class="nav-fullSizeBar">
+      <ul id="nav-largeDevice" class="nav-largeDevice">
         <li><a href="#news" class="nav-link">News</a></li>
         <li><a href="#product" class="nav-link">Product</a></li>
         <li><a href="#media" class="nav-link">Media</a></li>
@@ -37,8 +38,7 @@
         <h2 class="news-heading" role="heading">See Beyond The Horizon</h2>
       </div>
       <form id="form" action="https://www.freecodecamp.com/email-submit" role="form">
-        <label for="email" class="email-input"><input id="email" type="email" placeholder="@youremail.com" name="email"
-            required></label>
+        <label for="email" class="email-input"><input id="email" type="email" placeholder="@youremail.com" name="email" required></label>
         <input id="submit" class="subscribe-button" type="submit" value="Subscribe" role="button">
       </form>
     </section>
@@ -47,9 +47,7 @@
       <div>
         <h2 class="heading" role="heading">Our Product</h2>
       </div>
-      <article class="product-container-text" role="article">With this multiplatform award-winning voice and text chat
-        software now is your chance to maximise your potential and network like never before. OpenChat offers a state of
-        the art, fast and secure chat experience like no other and best of all its completely
+      <article class="product-container-text" role="article">With this multiplatform award-winning voice and text chat software now is your chance to maximise your potential and network like never before. OpenChat offers a state of the art, fast and secure chat experience like no other and best of all its completely
         free!
         <h4 class="key-feature-list-heading">Key Features Include:</h4>
         <ul class="key-feature-list">
@@ -65,8 +63,7 @@
     <section id="media" class="media-section section-container">
       <h2 class="heading" role="heading">OpenChat Showcase</h2>
       <div class="media-container">
-        <iframe id="video" class="product-video" width="1242" height="698"
-          src="https://www.youtube.com/embed/nLnT16HHUY4" allowfullscreen></iframe>
+        <iframe id="video" class="product-video" width="1242" height="698" src="https://www.youtube.com/embed/nLnT16HHUY4" allowfullscreen></iframe>
       </div>
     </section>
     <!-- Testimonial section -->
@@ -74,16 +71,13 @@
       <div>
         <h2 class="heading" role="heading">What Our Customers Say</h2>
       </div>
-      <div class="testimonials-container">"Absolutely brilliant, changing to OpenChat was the best decision we ever
-        made, productivity is up tenfold, incredible!"
+      <div class="testimonials-container">"Absolutely brilliant, changing to OpenChat was the best decision we ever made, productivity is up tenfold, incredible!"
         <p><strong>- Joe Bloggs.</strong></p>
       </div>
-      <div class="testimonials-container">"We needed access to the Open API which the support team were quick to
-        provide, thank you OpenSoft."
+      <div class="testimonials-container">"We needed access to the Open API which the support team were quick to provide, thank you OpenSoft."
         <p><strong>– Joe Bloggs Brother.</strong></p>
       </div>
-      <div class="testimonials-container">"Our sales team are now able to network efficiently with each other something
-        that was impossible with our old system, highly recommended!"
+      <div class="testimonials-container">"Our sales team are now able to network efficiently with each other something that was impossible with our old system, highly recommended!"
         <p><strong>– Joe Bloggs Sister.</strong></p>
       </div>
     </section>
@@ -93,26 +87,20 @@
         <h2 class="heading" role="heading">Download</h2>
       </div>
       <div class="downloads-container-1">
-        <button id="windows" class="download-windows download-buttons" type="button" name="button" value="Open Window"
-          role="button" onclick="window.open('https://www.microsoft.com/en-gb/software-download/windows10')">Windows
-          10</button>
+        <button id="windows" class="download-windows download-buttons" type="button" name="button" value="Open Window" role="button" onclick="window.open('https://www.microsoft.com/en-gb/software-download/windows10')">Windows 10</button>
       </div>
       <div class="downloads-container-2">
-        <button id="mac" class="download-mac download-buttons" type="button" name="button" value="Open Window"
-          role="button" onclick="window.open('https://www.apple.com/macos/catalina/')">Mac OS</button>
+        <button id="mac" class="download-mac download-buttons" type="button" name="button" value="Open Window" role="button" onclick="window.open('https://www.apple.com/macos/catalina/')">Mac OS</button>
       </div>
       <div class="downloads-container-3">
-        <button id="linux" Class="download-linux download-buttons" type="button" name="button" value="Open Window"
-          role="button" onclick="window.open('https://ubuntu.com/')">Linux</button>
+        <button id="linux" Class="download-linux download-buttons" type="button" name="button" value="Open Window" role="button" onclick="window.open('https://ubuntu.com/')">Linux</button>
       </div>
     </section>
   </main>
   <!-- Footer -->
-  <footer class="footer-container" role="content info">
+  <footer class="footer-container" role="contentinfo">
     OpenSoft 2020
   </footer>
-  <!-- JavaScript load for hamburger menu -->
-  <script src="script.js"></script>
 </body>
 
 </html>
